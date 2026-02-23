@@ -136,4 +136,77 @@
         "custom/reboot"
       ]
 },
+"group/net_drawer": {
+	"orientation": "inherit",
+	"drawer": {
+		"transition-duration": 500,
+		"children-class": "network#speed",
+		"transition-left-to-right": false
+	},
+	"modules": [
+		"network",
+		"network#speed"
+	]
+},
+"group/audio_drawer": {
+	"orientation": "inherit",
+	"drawer": {
+		"transition-duration": 500,
+		"children-class": "pulseaudio",
+		"transition-left-to-right": false
+	},
+	"modules": [
+		"pulseaudio",
+		"pulseaudio#microphone"
+	]
+},
+"group/sys_drawer": {
+	"orientation": "inherit",
+	"drawer": {
+		"transition-duration": 500,
+		"children-class": "battery",
+		"transition-left-to-right": false
+	},
+	"modules": [
+		"battery",
+		"backlight",
+		"custom/nightlight"
+	]
+},
+"group/peripherals_drawer": {
+	"orientation": "inherit",
+	"drawer": {
+		"transition-duration": 500,
+		"children-class": "bluetooth",
+		"transition-left-to-right": false
+	},
+	"modules": [
+		"bluetooth",
+		"keyboard-state",
+		"custom/keyboard"
+	]
+},
+"group/audio_group": {
+	"orientation": "inherit",
+	"modules": [
+		"pulseaudio",
+		"pulseaudio#microphone"
+	]
+},
+"group/sys_group": {
+	"orientation": "inherit",
+	"modules": [
+		"battery",
+		"backlight",
+		"custom/nightlight"
+	]
+},
+"group/peripherals_group": {
+	"orientation": "inherit",
+	"modules": [
+		"bluetooth",
+		"keyboard-state",
+		"custom/keyboard"
+	]
+}
 }

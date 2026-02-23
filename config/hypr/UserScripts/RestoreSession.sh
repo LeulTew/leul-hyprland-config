@@ -52,7 +52,13 @@ jq -rc '.[]' "$SESSION_FILE" | while IFS= read -r entry; do
   fi
 
   # Skip if app is already running
-  if pgrep -fi "$(echo "$CMD" | awk '{print $1}')" > /dev/null 2>&1; then
+  PGREP_TARGET="$CLASS"
+  [[ "$PGREP_TARGET" == "zen browser" || "$PGREP_TARGET" == "zen-alpha" ]] && PGREP_TARGET="zen"
+  [[ "$PGREP_TARGET" == "visual studio code" ]] && PGREP_TARGET="code"
+  [[ "$PGREP_TARGET" == "org.kde.dolphin" ]] && PGREP_TARGET="dolphin"
+  [[ "$PGREP_TARGET" == "code - insiders" ]] && PGREP_TARGET="code-insiders"
+  
+  if pgrep -fi "$PGREP_TARGET" > /dev/null 2>&1; then
       echo "Skipping $CLASS: Already running" >> "$LOG_FILE"
       continue
   fi
