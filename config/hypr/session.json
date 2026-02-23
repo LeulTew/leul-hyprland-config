@@ -1,0 +1,50 @@
+[
+  {
+    "class": "Code - Insiders",
+    "workspace": 1,
+    "monitor": 0,
+    "floating": false
+  },
+  {
+    "class": "antigravity",
+    "workspace": 2,
+    "monitor": 0,
+    "floating": false
+  },
+  {
+    "class": "antigravity",
+    "workspace": 3,
+    "monitor": 0,
+    "floating": false
+  },
+  {
+    "class": "app.zen_browser.zen",
+    "workspace": 6,
+    "monitor": 1,
+    "floating": false
+  },
+  {
+    "class": "kitty",
+    "workspace": -98,
+    "monitor": 0,
+    "floating": true
+  },
+  {
+    "class": "kitty",
+    "workspace": 4,
+    "monitor": 0,
+    "floating": false
+  },
+  {
+    "class": "org.kde.dolphin",
+    "workspace": 4,
+    "monitor": 0,
+    "floating": false
+  },
+  {
+    "class": "org.telegram.desktop",
+    "workspace": 5,
+    "monitor": 0,
+    "floating": true
+  }
+]
