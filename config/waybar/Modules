@@ -263,7 +263,7 @@
 		"playing": "",
 		"stopped": "",
 	},
-	// "ignored-players": ["firefox"]
+	"ignored-players": ["firefox", "chromium"],
 	"max-length": 30,
 },
 
